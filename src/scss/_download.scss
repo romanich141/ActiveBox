@@ -1,0 +1,30 @@
+$main-text-font-size: 28px;
+$text-font-size: 13px;
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  font-family: $relaway;
+  text-align: center;
+  h2 {
+    font-size: $main-text-font-size;
+  }
+  p {
+    font-size: $text-font-size;
+    font-weight: bold;
+    margin: 15px 0 30px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .download {
+    padding: 50px 10px;
+    h2 {
+      font-size: $main-text-font-size - 5px;
+    }
+    p {
+      font-size: $text-font-size - 2px;
+    }
+  }
+}
